@@ -2,7 +2,7 @@
 
 # action.sh: run zizmor via Docker
 
-set -eu
+set -eux
 
 dbg() {
     echo "::debug::${*}"
