@@ -39,7 +39,7 @@ declare -A versions
 parent_dir=$(dirname "${GITHUB_ACTION_PATH}")
 while IFS=' ' read -r version digest; do
     versions["${version}"]="${digest}"
-done < "${parent_dir}/support/versions"
+done < "${parent_dir}/main/support/versions"
 
 output="${RUNNER_TEMP}/zizmor"
 
